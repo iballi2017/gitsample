@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mainlandtech</title>
+  <base href="https://iballi2017.github.io/mainlandtech-angular/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- fontawesome icons cdn -->
+  <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+<link rel="stylesheet" href="styles.09e2c710755c8867a460.css"></head>
+
+<body>
+  <app-root></app-root>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+
+      // banner carousel
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true
+      });
+      // automatic carousel slide with interval
+      window.setInterval(function () { $('.banner-carousel').carousel('next') }, 3000);
+      
+
+      // Team info horizontal scroll
+      $('.team-carousel').carousel({
+        fullWidth: true
+      });
+    // automatic carousel slide with interval for team
+    // Team info horizontal scroll
+    window.setInterval(function () { $('.team-carousel').carousel('next') }, 6000)
+    // automatic carousel slide with interval for team in mobile
+    window.setInterval(function () { $('.mobile-team-carousel').carousel('next') }, 6000)
+    
+    // Next desktop carousel slide
+    $('.carousel-next').click(function () {
+        $('.team-carousel').carousel('next')
+    })
+    // Previous desktop carousel slide
+    $('.carousel-prev').click(function () {
+        $('.team-carousel').carousel('prev')
+    });
+    // Next mobile carousel slide
+    $('.carousel-mnext').click(function () {
+        $('.mobile-team-carousel').carousel('next')
+    })
+    // Previous mobile carousel slide
+    $('.carousel-mprev').click(function () {
+        $('.mobile-team-carousel').carousel('prev')
+    })
+
+
+
+
+
+      //******/Flipping cards
+      // card front page flip
+      $(".arrow-down1").click(function () {
+        $(".card1").css("transform", "rotateY(180deg)")
+      });
+      $(".arrow-down2").click(function () {
+        $(".card2").css("transform", "rotateY(180deg)")
+      });
+      $(".arrow-down3").click(function () {
+        $(".card3").css("transform", "rotateY(180deg)")
+      });
+      $(".arrow-down4").click(function () {
+        $(".card4").css("transform", "rotateY(180deg)")
+      });
+      $(".arrow-down5").click(function () {
+        $(".card5").css("transform", "rotateY(180deg)")
+      });
+      // card back page flip
+      $(".arrow-up1").hover(function () {
+        $(".card1").css("transform", "rotateY(360deg)")
+      });
+      $(".arrow-up2").hover(function () {
+        $(".card2").css("transform", "rotateY(360deg)")
+      });
+      $(".arrow-up3").hover(function () {
+        $(".card3").css("transform", "rotateY(360deg)")
+      });
+      $(".arrow-up4").hover(function () {
+        $(".card4").css("transform", "rotateY(360deg)")
+      });
+      $(".arrow-up5").hover(function () {
+        $(".card5").css("transform", "rotateY(360deg)")
+      });
+    });
+  </script>
+<script src="runtime-es2015.703a23e48ad83c851e49.js" type="module"></script><script src="polyfills-es2015.4d31cca2afc45cfd85b5.js" type="module"></script><script src="runtime-es5.465c2333d355155ec5f3.js" nomodule></script><script src="polyfills-es5.03d8c9fc4ed8e610412b.js" nomodule></script><script src="main-es2015.5a85b20f575b54fed4ff.js" type="module"></script><script src="main-es5.f996f850e143696eef95.js" nomodule></script></body>
+
+</html>
